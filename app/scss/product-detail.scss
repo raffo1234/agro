@@ -1,0 +1,229 @@
+.product-detail {
+  display: flex;
+  align-items: flex-start;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  max-width: 1240px;
+  width: 100%;
+
+  .product-item {
+    img.product-soy-fruta {
+      width: 58%;
+    }
+  }
+
+  .column {
+    width: 50%;
+
+    &:first-child {
+      padding-right: 40px;
+      text-align: right;
+    }
+
+    &:last-child {
+      padding-left: 40px;
+    }
+
+    &.detail-chicha-morada {
+      h2 {
+        border-color: color(chicha-morada);
+        color: color(chicha-morada);
+      }
+    }
+
+    &.detail-cebada-linaza {
+      h2 {
+        border-color: color(cebada-linaza);
+        color: color(cebada-linaza);
+      }
+    }
+
+    &.detail-durazno {
+      h2 {
+        border-color: color(durazno);
+        color: color(durazno);
+      }
+    }
+
+    &.detail-manzana {
+      h2 {
+        border-color: color(manzana);
+        color: color(manzana);
+      }
+    }
+
+    &.detail-maracuya {
+      h2 {
+        border-color: color(maracuya);
+        color: color(maracuya);
+      }
+    }
+
+    &.detail-naranja {
+      h2 {
+        border-color: color(naranja);
+        color: color(naranja);
+      }
+    }
+
+    &.detail-fresa {
+      h2 {
+        border-color: color(fresa);
+        color: color(fresa);
+      }
+    }
+
+    &.detail-mango {
+      h2 {
+        border-color: color(mango);
+        color: color(mango);
+      }
+    }
+
+    &.detail-pinia {
+      h2 {
+        border-color: color(pinia);
+        color: color(pinia);
+      }
+    }
+
+    &.detail-chicha-morada {
+      h3 {
+        color: color(chicha-morada);
+      }
+    }
+
+    &.detail-cebada-linaza {
+      h3 {
+        color: color(cebada-linaza);
+      }
+    }
+
+    &.detail-durazno {
+      h3 {
+        color: color(durazno);
+      }
+    }
+
+    &.detail-manzana {
+      h3 {
+        color: color(manzana);
+      }
+    }
+
+    &.detail-maracuya {
+      h3 {
+        color: color(maracuya);
+      }
+    }
+
+    &.detail-naranja {
+      h3 {
+        color: color(naranja);
+      }
+    }
+
+    &.detail-fresa {
+      h3 {
+        color: color(fresa);
+      }
+    }
+
+    &.detail-mango {
+      h3 {
+        color: color(mango);
+      }
+    }
+
+    &.detail-pinia {
+      h3 {
+        color: color(pinia);
+      }
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      border-bottom: 2px dotted transparent;
+      font-size: 70px;
+      font-family: "bernadetteregular";
+    }
+
+    h3 {
+      margin-bottom: 6px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 20px;
+      padding-left: 60px;
+      min-height: 40px;
+      color: #5e503e;
+      font-size: 14px;
+      line-height: 1.5;
+
+      .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: #dfd6c6;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product-detail {
+    display: block;
+
+    .column {
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 20px;
+        padding-right: 0;
+        text-align: center;
+      }
+
+      &:last-child {
+        padding-left: 0;
+      }
+
+      h2 {
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-detail {
+    padding-top: 0;
+
+    .column {
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .product-item {
+    width: 320px;
+    height: 320px;
+  }
+}

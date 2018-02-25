@@ -1,0 +1,131 @@
+.wrapper-salud {
+  min-height: 768px;
+  width: 100%;
+  background: url("../images/background-section-salud.jpg") 50% 0 no-repeat;
+  background-size: cover;
+  text-align: right;
+
+  article {
+    display: inline-block;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    width: 50%;
+
+    h2 {
+      margin-bottom: 15px;
+      padding-right: 15px;
+      padding-left: 15px;
+      color: #ff8400;
+      text-align: left;
+      font-size: 80px;
+      font-family: 'bernadetteregular';
+      line-height: 1;
+
+      span {
+        display: block;
+        padding-left: 80px;
+        color: #51982a;
+      }
+    }
+
+    ul {
+      li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-top: 6px;
+        padding-left: 90px;
+        min-height: 70px;
+        color: #796d5d;
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.5;
+
+        .salud-icons {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 7px;
+          width: 70px;
+          height: 70px;
+          border: 1px solid transparent;
+          border-radius: 56px;
+          color: #fff;
+
+          &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            width: 54px;
+            height: 54px;
+            border-radius: 27px;
+            content: "";
+            transform: translate(-50%, -50%);
+          }
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          &.salud-1 {
+            border-color: #ff6f01;
+
+            &::before {
+              background-color: #ff6f01;
+            }
+          }
+
+          &.salud-2 {
+            border-color: #4eb6c8;
+
+            &::before {
+              background-color: #4eb6c8;
+            }
+          }
+
+          &.salud-3 {
+            border-color: #d73b34;
+
+            &::before {
+              background-color: #d73b34;
+            }
+          }
+
+          &.salud-4 {
+            border-color: #68a943;
+
+            &::before {
+              background-color: #68a943;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper-salud {
+    min-height: 560px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wrapper-salud {
+    min-height: 560px;
+    background: #eaeff2;
+
+    article {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      width: 100%;
+
+      h2 {
+        font-size: 50px;
+      }
+    }
+  }
+}

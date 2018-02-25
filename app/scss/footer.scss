@@ -1,0 +1,145 @@
+footer {
+  padding-top: 60px;
+  padding-bottom: 15px;
+  background-color: #68a943;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+
+  h5 {
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  p,
+  ul {
+    margin-bottom: 15px;
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .footer-columns {
+    display: flex;
+
+    article {
+      &.first {
+        flex-basis: 400px;
+        padding-right: 110px;
+
+        img {
+          margin-bottom: 15px;
+        }
+      }
+
+      &.second {
+        flex: 1;
+        padding-top: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+
+      &.third {
+        flex-basis: 280px;
+        padding-top: 20px;
+      }
+    }
+
+    ul.info {
+      li {
+        position: relative;
+        margin-bottom: 12px;
+        padding-left: 30px;
+
+        i {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translate(0 , -50%);
+        }
+      }
+    }
+  }
+
+  .second-columns {
+    display: flex;
+
+    .second-column {
+      width: 33.33333334%;
+      padding-right: 10px;
+
+      ul {
+        li {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .third-column {
+      ul {
+        li {
+          position: relative;
+          padding-left: 30px;
+
+          i {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+          }
+        }
+      }
+    }
+  }
+
+  .footer-copy {
+    margin-top: 20px;
+    padding-top: 30px;
+    border-top: 1px solid #7fd250;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    .footer-columns {
+      article {
+        &.first {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  footer {
+    .footer-columns {
+      display: block;
+
+      article {
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #7fd250;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        &.second {
+          padding-top: 0;
+          padding-right: 0;
+          padding-left: 0;
+        }
+
+        &.third {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}

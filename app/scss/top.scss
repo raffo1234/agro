@@ -1,0 +1,55 @@
+.top {
+  display: flex;
+  align-items: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  ul {
+    li {
+      display: inline-block;
+    }
+  }
+
+  li,
+  a {
+    color: white;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  a {
+    white-space: nowrap;
+  }
+
+  .social {
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    li {
+      margin-right: 15px;
+    }
+  }
+
+  .contact {
+    text-align: right;
+
+    li {
+      margin-left: 15px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top {
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+
+    li,
+    a {
+      color: #666;
+      font-size: 11px;
+    }
+  }
+}

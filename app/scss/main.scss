@@ -1,0 +1,110 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333;
+}
+
+body {
+  background-color: #f5efe7;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.modal-opened {
+  overflow: hidden;
+  height: 100%;
+}
+
+b {
+  font-weight: 700;
+}
+
+button {
+  padding: 0;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon {
+  vertical-align: -2px;
+  font-size: 16px;
+
+  &::before {
+    display: inline-block;
+    vertical-align: -2px;
+  }
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1540px;
+  width: 100%;
+}
+
+.wayus {
+  color: color(wayus);
+}
+
+.soyfruta {
+  color: color(soyfruta);
+}
+
+.color-chicha-morada {
+  color: color(chicha-morada);
+}
+
+.color-cebada-linaza {
+  color: color(cebada-linaza);
+}
+
+.color-durazno {
+  color: color(durazno);
+}
+
+.color-manzana {
+  color: color(manzana);
+}
+
+.color-maracuya {
+  color: color(maracuya);
+}
+
+.color-naranja {
+  color: color(naranja);
+}
+
+.color-fresa {
+  color: color(fresa);
+}
+
+.color-mango {
+  color: color(mango);
+}
+
+.color-pinia {
+  color: color(pinia);
+}
+
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

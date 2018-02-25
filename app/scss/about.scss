@@ -1,0 +1,70 @@
+.about {
+  padding: 90px 0;
+
+  h1 {
+    margin-bottom: 30px;
+    border-bottom: 2px dotted color(purple);
+    color: color(purple);
+    font-size: 80px;
+    font-family: "bernadetteregular";
+    line-height: 1;
+  }
+
+  p {
+    margin-bottom: 15px;
+    color: #5e503e;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .about-columns {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 1240px;
+    width: 100%;
+
+    .about-column {
+      width: 50%;
+
+      &:last-child {
+        padding-left: 100px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    h1 {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .about-columns {
+      display: block;
+
+      .about-column {
+        width: 100%;
+
+        &:last-child {
+          padding-top: 20px;
+          padding-left: 10%;
+          padding-right: 10%;
+        }
+      }
+    }
+  }
+}

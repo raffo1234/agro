@@ -1,0 +1,98 @@
+.product {
+  padding-bottom: 20px;
+}
+
+.page-title {
+  position: relative;
+  margin-bottom: 60px;
+  padding-top: 150px;
+  text-align: center;
+
+  h1 {
+    color: #efe4d5;
+    font-size: 150px;
+    font-family: 'bernadetteregular';
+    line-height: .8;
+  }
+
+  img {
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  p {
+    color: #666;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.product-columns {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1240px;
+  width: 100%;
+  text-align: center;
+
+  article {
+    display: inline-block;
+    margin-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 386px;
+
+    .product-item {
+      width: 346px;
+      height: 346px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #5e503e;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .page-title {
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+    h1 {
+      font-size: 90px;
+      line-height: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-title {
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 60px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

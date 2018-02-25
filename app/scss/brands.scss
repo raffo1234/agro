@@ -1,0 +1,150 @@
+.wrapper-brands {
+  padding-top: 30px;
+  text-align: center;
+
+  h2 {
+    color: #343434;
+    font-size: 60px;
+    font-family: 'bernadetteregular';
+    line-height: 1.6;
+  }
+
+  p {
+    margin-bottom: 30px;
+    color: #686868;
+    font-size: 14px;
+    line-height: 1.25;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.brands {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-bottom: 60px;
+  padding-left: 10px;
+  max-width: 1240px;
+  width: 100%;
+
+  article {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 50%;
+    text-align: center;
+
+    > p {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 300px;
+      width: 100%;
+      color: #5e503e;
+      line-height: 1.5;
+    }
+  }
+
+  .product-item-img {
+    margin-bottom: 15px;
+  }
+}
+
+.product-item {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 480px;
+  height: 480px;
+  border-radius: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 30px 5px rgba(#c6b793, .2);
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 95%;
+    transform: translate(-50%, -50%);
+
+    &.product-wayus-chicha-morada {
+      width: 340px;
+    }
+
+    &.product-wayus-cebada-linaza {
+      width: 300px;
+    }
+
+    &.product-wayus-durazno {
+      width: 328px;
+    }
+
+    &.product-wayus-manzana {
+      width: 340px;
+    }
+
+    &.product-wayus-maracuya {
+      width: 305px;
+    }
+
+    &.product-wayus-naranja {
+      width: 390px;
+    }
+
+    &.product-wayus-fresa {
+      width: 410px;
+    }
+
+    &.product-wayus-mango {
+      width: 305px;
+    }
+
+    &.product-wayus-pinia {
+      width: 320px;
+    }
+
+    &.product-soy-fruta {
+      width: 200px;
+    }
+  }
+
+  .btn-circular {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .brands {
+    padding-right: 0;
+    padding-left: 0;
+
+    .product-item {
+      padding-bottom: 100%;
+      max-width: 480px;
+      width: 100%;
+      height: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wrapper-brands {
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .brands {
+    padding-bottom: 30px;
+
+    article {
+      margin-bottom: 50px;
+      width: auto;
+    }
+  }
+}

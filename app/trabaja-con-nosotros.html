@@ -100,31 +100,69 @@
     <div class="form-map">
       <div class="form">
         <h2>Contáctanos</h2>
-        <form class="work-with-us-form">
+        <form class="work-with-us-form form-validate">
           <div class="row">
             <div class="column">
-              <label for="firstname">Nombre</label>
-              <input type="text" name="firstname" id="firstname" class="input">
+              <label for="firstname">Nombre *</label>
+              <input type="text"
+                     data-rule-required="true"
+                     data-msg-required="Ingresa tus Nombres"
+                     data-rule-regex="^([^0-9]*)$"
+                     data-msg-regex="Números no estan permitidos"
+                     data-rule-minlength="2"
+                     data-msg-minlength="Mínimo 2 caracteres"
+                     name="firstname"
+                     id="firstname"
+                     class="input">
             </div>
             <div class="column">
-              <label for="lastname">Apellidos</label>
-              <input type="text" name="lastname" id="lastname" class="input">
+              <label for="lastname">Apellidos *</label>
+              <input type="text"
+                     data-rule-required="true"
+                     data-msg-required="Ingresa tus Apellidos"
+                     data-rule-regex="^([^0-9]*)$"
+                     data-msg-regex="Números no estan permitidos"
+                     data-rule-minlength="2"
+                     data-msg-minlength="Mínimo 2 caracteres"
+                     name="lastname"
+                     id="lastname"
+                     class="input">
             </div>
           </div>
           <div class="row">
             <div class="column">
-              <label for="phone">Teléfono</label>
-              <input type="text" name="phone" id="phone" class="input">
+              <label for="phone">Teléfono *</label>
+              <input type="text"
+                     data-rule-required="true"
+                     data-msg-required="Ingresa tu Teléfono"
+                     name="phone"
+                     id="phone"
+                     class="input">
             </div>
             <div class="column">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" class="input">
+              <label for="email">Email *</label>
+              <input type="email"
+                     data-rule-required="true"
+                     data-msg-required="Ingresa tu Email"
+                     data-rule-email="true"
+                     data-msg-email="Ingrese un Email válido"
+                     name="email"
+                     id="email"
+                     class="input">
             </div>
           </div>
           <div class="row">
             <div class="column-full">
-              <label for="message">Mensaje</label>
-              <textarea name="message" cols="30" rows="6" id="message" class="textarea"></textarea>
+              <label for="message">Mensaje *</label>
+              <textarea name="message"
+                        data-rule-required="true"
+                        data-msg-required="Ingresa tu Mensaje"
+                        data-rule-minlength="2"
+                        data-msg-minlength="Mínimo 2 caracteres"
+                        cols="30"
+                        rows="6"
+                        id="message"
+                        class="textarea"></textarea>
             </div>
           </div>
           <div class="row">

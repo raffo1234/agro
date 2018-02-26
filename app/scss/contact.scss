@@ -6,11 +6,11 @@
   width: 100%;
 
   h1 {
+    margin-bottom: 10px;
     color: color(green);
     text-align: center;
     font-size: 80px;
     font-family: "bernadetteregular";
-    margin-bottom: 10px;
   }
 
   p {
@@ -109,11 +109,22 @@
     outline: none;
     border-color: #00c64b;
   }
+
+  &.error {
+    border-color: color(error);
+  }
 }
 
 .textarea {
   overflow: auto;
   resize: none;
+}
+
+label.error {
+  padding-top: 5px;
+  color: color(error);
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .contact-info {

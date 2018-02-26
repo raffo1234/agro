@@ -1,4 +1,5 @@
 import { openModal } from './customModal';
+import { validateForm } from './formValidation';
 
 export function sendContactForm() {
   if (!$('.contact-form').length) return false;
@@ -7,9 +8,7 @@ export function sendContactForm() {
   const button = form.find(':submit');
   const formMessages = $('.form-messages');
 
-  form.on("submit", function(e) {
-    e.preventDefault();
-
+  const afterValidate = () => {
     button.addClass('disabled');
     button.html('ENVIANDO...');
 
@@ -50,5 +49,7 @@ export function sendContactForm() {
 
       openModal();
     });
-  })
+  }
+
+  validateForm(form, afterValidate);
 }

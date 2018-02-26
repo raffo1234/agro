@@ -49,9 +49,9 @@
 
         // Send email to contact
         $recipient_to_contact = $email;
-        $subject_to_contact = "Corporación Agromerati S.A.C.";
+        $subject_to_contact = "Corporación Merati S.A.C.";
         $email_to_contact = "administracion@corporacionmerati.com";
-        $email_headers_to_contact = "From: Corporación Agromerati S.A.C. <$email_to_contact>";
+        $email_headers_to_contact = "From: Corporación Merati S.A.C. <$email_to_contact>";
         $email_content_to_contact .= "Gracias por comunicarte con nosotros, en breve estaremos comunicandonos contigo.";
 
         if (mail($recipient_to_contact, $subject_to_contact, $email_content_to_contact, $email_headers_to_contact)) {

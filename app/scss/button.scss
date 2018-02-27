@@ -54,17 +54,17 @@
 
 .btn-hamburger {
   display: block;
+  padding: 5px;
+  width: 35px;
+  background-color: #f5efe7;
 
   span{
     display: block;
-    margin-bottom: 7px;
-    width: 36px;
-    height: 3px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 2px;
     background-color: #666;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 }
 

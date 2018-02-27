@@ -1,0 +1,128 @@
+.responsive-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  visibility: hidden;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(white, .96);
+  text-align: center;
+  opacity: 0;
+  transition: opacity .15s, visibility .15s;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  ul {
+    li {
+      display: block;
+
+       a {
+         position: relative;
+         display: block;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         padding: 10px;
+         transition: color .3s;
+
+         &::after {
+           position: absolute;
+           top: 100%;
+           left: 0;
+           width: 100%;
+           height: 11px;
+           content: '';
+         }
+
+         &::before {
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           overflow: hidden;
+           width: 0;
+           height: 4px;
+           border-bottom: 2px solid #fff;
+           background-color: color(chicha-morada);
+           content: '';
+           transition: width .4s;
+         }
+
+         &:hover,
+         &:active {
+           color: color(chicha-morada);
+           text-decoration: none;
+
+           &::before {
+             width: 100%;
+           }
+         }
+       }
+    }
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: color(light-gray);
+    opacity: 0;
+    transition: transform .42s, opacity .2s;
+    transform: translate(0, 10px);
+  }
+
+  &.active {
+    .btn-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.btn-close {
+  padding: 5px;
+  width: 36px;
+  height: 36px;
+
+  div {
+    transform: rotate(45deg);
+
+    span {
+      position: relative;
+      display: block;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      width: 100%;
+      height: 2px;
+      background-color: color(chicha-morada);
+
+      &:first-child {
+        top: 2px;
+      }
+
+      &:last-child {
+        top: -3px;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &:active {
+    span {
+      background-color: darken(color(chicha-morada), 15%);
+    }
+  }
+}

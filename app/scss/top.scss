@@ -53,3 +53,23 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .top {
+    display: block;
+
+    .social {
+      margin-bottom: 10px;
+      
+      li {
+        margin-right: 0;
+      }
+    }
+
+    .contact {
+      li {
+        margin-left: 0;
+      }
+    }
+  }
+}

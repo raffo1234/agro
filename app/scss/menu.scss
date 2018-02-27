@@ -26,8 +26,14 @@ header {
       flex-grow: 1;
       flex-shrink: 0;
       opacity: 0;
-    }
+      visibility: hidden;
+    }    
   }
+}
+
+.btn-transparent {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .main-menu {
@@ -95,7 +101,8 @@ header {
     background-color: #fff;
   }
 
-  .main-menu {
+  .main-menu,
+  .main-menu-cover .main-menu-cover-inner {
     padding-right: 0;
     padding-left: 0;
 

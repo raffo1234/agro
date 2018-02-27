@@ -9,6 +9,11 @@ body {
   background-color: #f5efe7;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
+
+  &.overflow {
+    overflow: hidden;
+    height: 100vh;
+  }
 }
 
 *, *:before, *:after {

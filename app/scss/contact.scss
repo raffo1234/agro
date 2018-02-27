@@ -104,6 +104,8 @@
   font-size: 15px;
   font-family: inherit;
   transition: border-color .3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
   &:focus {
     outline: none;
@@ -123,8 +125,8 @@
 label.error {
   padding-top: 5px;
   color: color(error);
-  font-size: 14px;
   font-weight: 300;
+  font-size: 14px;
 }
 
 .contact-info {
@@ -170,10 +172,15 @@ label.error {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contact-us {
     padding-top: 40px;
     padding-bottom: 40px;
+
+    .form-map {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     h1 {
       font-size: 50px;
